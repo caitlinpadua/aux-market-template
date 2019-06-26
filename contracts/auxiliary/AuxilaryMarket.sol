@@ -1,9 +1,9 @@
 pragma solidity ^0.5.0;
 
-import "../../lib/lifecycle/Destructible.sol";
-import "../../lib/ownership/Upgradable.sol";
+import "../lib/lifecycle/Destructible.sol";
+import "../lib/ownership/Upgradable.sol";
 import "./AuxilaryMarketInterface.sol";
-import "../../platform/dispatch/Dispatch.sol";
+import "../platform/dispatch/Dispatch.sol";
 
 contract AuxilaryMarket is Destructible, AuxilaryMarketInterface, Upgradable {
 

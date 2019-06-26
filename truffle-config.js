@@ -5,7 +5,7 @@ require('babel-polyfill');
 const HDWalletProvider = require("truffle-hdwallet-provider-privkey");
 const HDWalletProviderMem = require("truffle-hdwallet-provider");
 
-const mnemonic = "solid giraffe crowd become skin deliver screen receive balcony ask manual current";
+const mnemonic = "runway hand direct evil panel unknown join spoil answer grass gaze sentence";
 
 module.exports = {
     networks: {
@@ -31,19 +31,6 @@ module.exports = {
             gas: "6700000",
             gasPrice: "10000000"
         },
-	   "docker": {
-            host: "bootstrap",
-            port: 8545,
-            network_id: "*",
-            from: "0x010e49e47cbb34e67c072702ed6f4d8b273f751f"// must be first account in accounts[] array inside tests
-    	},
-        "docker-local": {
-            host: "127.0.0.1",
-            port: 8545,
-            network_id: "*",
-            from: "0x010e49e47cbb34e67c072702ed6f4d8b273f751f"// must be first account in accounts[] array inside tests
-        },
-
         "kovan": {
             provider: new HDWalletProviderMem(mnemonic, "wss://kovan.infura.io/ws/xeb916AFjrcttuQlezyq"),
             gas: "6238278",
