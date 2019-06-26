@@ -1,0 +1,463 @@
+{
+  "contractName": "MainMarket",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarket.sol\":\"MainMarket\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarket.sol\":{\"keccak256\":\"0x3bc4e0bd3ddafeca49f3425e4b408c658f6ec4e05c721e01e861ca3e6dfc2362\",\"urls\":[\"bzzr://21b0da39cb3e12037c4288bdb6081ecf80a9e59f4e39bbee23e7eebe1d92a155\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582003fdf0b8ed2157fa496b585319a36c0722a3d19f5424077927d2b7c1474022030029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582003fdf0b8ed2157fa496b585319a36c0722a3d19f5424077927d2b7c1474022030029",
+  "sourceMap": "25:267:26:-;;;190:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;190:29:26;25:267;;;;;;",
+  "deployedSourceMap": "25:267:26:-;;;;;",
+  "source": "pragma solidity ^0.5.8;\n\ncontract MainMarket {\n\n    struct AuxiliaryMarket {\n        address addr;\n    }\n\n    mapping (address => uint) holders;\n\n    AuxiliaryMarket auxiliaryMarket;\n\n\n\n    constructor() public {\n\n    }\n\n\n    //Disperse 5% fees to all\n    function payFee() private {\n\n    }\n}",
+  "sourcePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarket.sol",
+  "ast": {
+    "absolutePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarket.sol",
+    "exportedSymbols": {
+      "MainMarket": [
+        6060
+      ]
+    },
+    "id": 6061,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6042,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:26"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6060,
+        "linearizedBaseContracts": [
+          6060
+        ],
+        "name": "MainMarket",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "MainMarket.AuxiliaryMarket",
+            "id": 6045,
+            "members": [
+              {
+                "constant": false,
+                "id": 6044,
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "scope": 6045,
+                "src": "85:12:26",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6043,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "85:7:26",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "AuxiliaryMarket",
+            "nodeType": "StructDefinition",
+            "scope": 6060,
+            "src": "52:52:26",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6049,
+            "name": "holders",
+            "nodeType": "VariableDeclaration",
+            "scope": 6060,
+            "src": "110:33:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 6048,
+              "keyType": {
+                "id": 6046,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "119:7:26",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "110:25:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 6047,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "130:4:26",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 6051,
+            "name": "auxiliaryMarket",
+            "nodeType": "VariableDeclaration",
+            "scope": 6060,
+            "src": "150:31:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_AuxiliaryMarket_$6045_storage",
+              "typeString": "struct MainMarket.AuxiliaryMarket"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 6050,
+              "name": "AuxiliaryMarket",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6045,
+              "src": "150:15:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_AuxiliaryMarket_$6045_storage_ptr",
+                "typeString": "struct MainMarket.AuxiliaryMarket"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 6054,
+              "nodeType": "Block",
+              "src": "211:8:26",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 6055,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6052,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "201:2:26"
+            },
+            "returnParameters": {
+              "id": 6053,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "211:0:26"
+            },
+            "scope": 6060,
+            "src": "190:29:26",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6058,
+              "nodeType": "Block",
+              "src": "282:8:26",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 6059,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "payFee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6056,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:2:26"
+            },
+            "returnParameters": {
+              "id": 6057,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "282:0:26"
+            },
+            "scope": 6060,
+            "src": "256:34:26",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          }
+        ],
+        "scope": 6061,
+        "src": "25:267:26"
+      }
+    ],
+    "src": "0:292:26"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarket.sol",
+    "exportedSymbols": {
+      "MainMarket": [
+        6060
+      ]
+    },
+    "id": 6061,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6042,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:26"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6060,
+        "linearizedBaseContracts": [
+          6060
+        ],
+        "name": "MainMarket",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "MainMarket.AuxiliaryMarket",
+            "id": 6045,
+            "members": [
+              {
+                "constant": false,
+                "id": 6044,
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "scope": 6045,
+                "src": "85:12:26",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6043,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "85:7:26",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "AuxiliaryMarket",
+            "nodeType": "StructDefinition",
+            "scope": 6060,
+            "src": "52:52:26",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6049,
+            "name": "holders",
+            "nodeType": "VariableDeclaration",
+            "scope": 6060,
+            "src": "110:33:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 6048,
+              "keyType": {
+                "id": 6046,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "119:7:26",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "110:25:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 6047,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "130:4:26",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 6051,
+            "name": "auxiliaryMarket",
+            "nodeType": "VariableDeclaration",
+            "scope": 6060,
+            "src": "150:31:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_AuxiliaryMarket_$6045_storage",
+              "typeString": "struct MainMarket.AuxiliaryMarket"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 6050,
+              "name": "AuxiliaryMarket",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6045,
+              "src": "150:15:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_AuxiliaryMarket_$6045_storage_ptr",
+                "typeString": "struct MainMarket.AuxiliaryMarket"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 6054,
+              "nodeType": "Block",
+              "src": "211:8:26",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 6055,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6052,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "201:2:26"
+            },
+            "returnParameters": {
+              "id": 6053,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "211:0:26"
+            },
+            "scope": 6060,
+            "src": "190:29:26",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6058,
+              "nodeType": "Block",
+              "src": "282:8:26",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 6059,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "payFee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6056,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:2:26"
+            },
+            "returnParameters": {
+              "id": 6057,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "282:0:26"
+            },
+            "scope": 6060,
+            "src": "256:34:26",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          }
+        ],
+        "scope": 6061,
+        "src": "25:267:26"
+      }
+    ],
+    "src": "0:292:26"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-06-24T03:26:20.611Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

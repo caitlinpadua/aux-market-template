@@ -1,0 +1,483 @@
+{
+  "contractName": "OnChainProvider",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "userQuery",
+          "type": "string"
+        },
+        {
+          "name": "endpoint",
+          "type": "bytes32"
+        },
+        {
+          "name": "endpointParams",
+          "type": "bytes32[]"
+        },
+        {
+          "name": "onchainSubscriber",
+          "type": "bool"
+        }
+      ],
+      "name": "receive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"userQuery\",\"type\":\"string\"},{\"name\":\"endpoint\",\"type\":\"bytes32\"},{\"name\":\"endpointParams\",\"type\":\"bytes32[]\"},{\"name\":\"onchainSubscriber\",\"type\":\"bool\"}],\"name\":\"receive\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"receive(uint256,string,bytes32,bytes32[],bool)\":{\"details\":\"function for requesting data from on-chain provider\",\"params\":{\"endpoint\":\"endpoint specifier ala 'smart_contract'\",\"endpointParams\":\"endpoint-specific params\",\"id\":\"request id\",\"userQuery\":\"query string\"}}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/lib/platform/OnChainProvider.sol\":\"OnChainProvider\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/lib/platform/OnChainProvider.sol\":{\"keccak256\":\"0x1fe2cf604bc9dbb2e4f720d764dbcf0e86855d14d3653e1e5c03e570e6ec95c1\",\"urls\":[\"bzzr://026bc7a49e2311e4835cfcea919221eae92a70c12eb5f9457eff37ea3a6d5b8a\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.8;\n\ncontract OnChainProvider {\n    /// @dev function for requesting data from on-chain provider\n    /// @param id request id\n    /// @param userQuery query string\n    /// @param endpoint endpoint specifier ala 'smart_contract'\n    /// @param endpointParams endpoint-specific params\n    function receive(uint256 id, string calldata userQuery, bytes32 endpoint, bytes32[] calldata endpointParams, bool onchainSubscriber) external;\n}\n",
+  "sourcePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/lib/platform/OnChainProvider.sol",
+  "ast": {
+    "absolutePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/lib/platform/OnChainProvider.sol",
+    "exportedSymbols": {
+      "OnChainProvider": [
+        2020
+      ]
+    },
+    "id": 2021,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2005,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2020,
+        "linearizedBaseContracts": [
+          2020
+        ],
+        "name": "OnChainProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev function for requesting data from on-chain provider\n @param id request id\n @param userQuery query string\n @param endpoint endpoint specifier ala 'smart_contract'\n @param endpointParams endpoint-specific params",
+            "id": 2019,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "receive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2017,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2007,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "324:10:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2006,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2009,
+                  "name": "userQuery",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "336:25:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2008,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "336:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2011,
+                  "name": "endpoint",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "363:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2010,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "363:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2014,
+                  "name": "endpointParams",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "381:33:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2012,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "381:7:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 2013,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "381:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2016,
+                  "name": "onchainSubscriber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "416:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2015,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:116:14"
+            },
+            "returnParameters": {
+              "id": 2018,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "448:0:14"
+            },
+            "scope": 2020,
+            "src": "307:142:14",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2021,
+        "src": "25:426:14"
+      }
+    ],
+    "src": "0:452:14"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/lib/platform/OnChainProvider.sol",
+    "exportedSymbols": {
+      "OnChainProvider": [
+        2020
+      ]
+    },
+    "id": 2021,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2005,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2020,
+        "linearizedBaseContracts": [
+          2020
+        ],
+        "name": "OnChainProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev function for requesting data from on-chain provider\n @param id request id\n @param userQuery query string\n @param endpoint endpoint specifier ala 'smart_contract'\n @param endpointParams endpoint-specific params",
+            "id": 2019,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "receive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2017,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2007,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "324:10:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2006,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2009,
+                  "name": "userQuery",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "336:25:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2008,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "336:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2011,
+                  "name": "endpoint",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "363:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2010,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "363:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2014,
+                  "name": "endpointParams",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "381:33:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2012,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "381:7:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 2013,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "381:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2016,
+                  "name": "onchainSubscriber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2019,
+                  "src": "416:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2015,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:116:14"
+            },
+            "returnParameters": {
+              "id": 2018,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "448:0:14"
+            },
+            "scope": 2020,
+            "src": "307:142:14",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2021,
+        "src": "25:426:14"
+      }
+    ],
+    "src": "0:452:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-06-24T03:26:20.547Z",
+  "devdoc": {
+    "methods": {
+      "receive(uint256,string,bytes32,bytes32[],bool)": {
+        "details": "function for requesting data from on-chain provider",
+        "params": {
+          "endpoint": "endpoint specifier ala 'smart_contract'",
+          "endpointParams": "endpoint-specific params",
+          "id": "request id",
+          "userQuery": "query string"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "contractName": "MainMarketInterface",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarketInterface.sol\":\"MainMarketInterface\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarketInterface.sol\":{\"keccak256\":\"0x5aa8fa2094f6c231505e10b2d08828c0890cc8f70c8adc051d591dac5d5d4ee3\",\"urls\":[\"bzzr://6566e52b620d0c0969c7424816ffb1e2938d500042f5af2b08d6aa7c204597af\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058207f1b105edbeaa00dbe168a77c07c657eff8a0cb2787f47e6dfbcbe5f756bb9490029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058207f1b105edbeaa00dbe168a77c07c657eff8a0cb2787f47e6dfbcbe5f756bb9490029",
+  "sourceMap": "25:569:27:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:569:27;;;;;;;",
+  "deployedSourceMap": "25:569:27:-;;;;;",
+  "source": "pragma solidity ^0.5.8;\n\ncontract MainMarketInterface {\n\n//    //Withdraw 5% to holders\n//    function withdraw() external;\n//\n//    //Convert the asset tokens to Zap Tokens\n//    function exchangeZap() private;\n//\n//    //Disperse funds to holders 5% fee based on percentage of stake\n//    function disperseFunds() private;\n//\n//    //Self destruct the contract if it goes bankrupt\n//    function selfDestruct() external;\n//\n//    //Deposits Zap Tokens to MainMarket Contract\n//    function deposit() payable external;\n//\n//    //Get current Zap price\n//    function getZapPrice() external;\n\n}\n",
+  "sourcePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarketInterface.sol",
+  "ast": {
+    "absolutePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarketInterface.sol",
+    "exportedSymbols": {
+      "MainMarketInterface": [
+        6063
+      ]
+    },
+    "id": 6064,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6062,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6063,
+        "linearizedBaseContracts": [
+          6063
+        ],
+        "name": "MainMarketInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 6064,
+        "src": "25:569:27"
+      }
+    ],
+    "src": "0:595:27"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/moinuddin/Desktop/Zap Projects/main-market-template/contracts/mainmarket/MainMarketInterface.sol",
+    "exportedSymbols": {
+      "MainMarketInterface": [
+        6063
+      ]
+    },
+    "id": 6064,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6062,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6063,
+        "linearizedBaseContracts": [
+          6063
+        ],
+        "name": "MainMarketInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 6064,
+        "src": "25:569:27"
+      }
+    ],
+    "src": "0:595:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-06-24T03:26:20.612Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
